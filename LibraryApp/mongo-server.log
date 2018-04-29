@@ -1,0 +1,1118 @@
+2018-04-22T23:52:45.724-0400 D NETWORK  [main] fd limit hard:9223372036854775807 soft:256 max conn: 204
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] MongoDB starting : pid=1035 port=27017 dbpath=/Users/vineeth/Documents/VinzLab/ExpressJS/LibraryApp/db 64-bit host=Vineeths-MacBook-Pro.local
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] db version v3.6.3
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2o  27 Mar 2018
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] allocator: system
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] modules: none
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] build environment:
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten]     distarch: x86_64
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-04-22T23:52:45.741-0400 I CONTROL  [initandlisten] options: { config: "/Users/vineeth/Documents/VinzLab/ExpressJS/LibraryApp/mongod.conf", storage: { dbPath: "/Users/vineeth/Documents/VinzLab/ExpressJS/LibraryApp/db" }, systemLog: { destination: "file", path: "/Users/vineeth/Documents/VinzLab/ExpressJS/LibraryApp/mongo-server.log", verbosity: 5 } }
+2018-04-22T23:52:45.741-0400 D NETWORK  [initandlisten] fd limit hard:9223372036854775807 soft:256 max conn: 204
+2018-04-22T23:52:45.742-0400 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-04-22T23:52:46.406-0400 D COMMAND  [WTJournalFlusher] BackgroundJob starting: WTJournalFlusher
+2018-04-22T23:52:46.406-0400 D COMMAND  [WTCheckpointThread] BackgroundJob starting: WTCheckpointThread
+2018-04-22T23:52:46.406-0400 D STORAGE  [WTJournalFlusher] starting WTJournalFlusher thread
+2018-04-22T23:52:46.406-0400 D STORAGE  [WTCheckpointThread] starting WTCheckpointThread thread
+2018-04-22T23:52:46.419-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:46.461-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 1
+2018-04-22T23:52:46.468-0400 D STORAGE  [initandlisten] WiredTigerKVEngine::createRecordStore ns: _mdb_catalog uri: table:_mdb_catalog config: type=file,memory_page_max=10m,split_pct=90,leaf_value_max=64MB,checksum=on,block_compressor=snappy,,key_format=q,value_format=u,app_metadata=(formatVersion=1),log=(enabled=true)
+2018-04-22T23:52:46.477-0400 D STORAGE  [initandlisten] WT commit_transaction for snapshot id 1
+2018-04-22T23:52:46.478-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 2
+2018-04-22T23:52:46.478-0400 D STORAGE  [initandlisten] WiredTigerUtil::checkApplicationMetadataFormatVersion  uri: table:_mdb_catalog ok range 1 -> 1 current: 1
+2018-04-22T23:52:46.486-0400 D STORAGE  [initandlisten] WT rollback_transaction for snapshot id 2
+2018-04-22T23:52:46.486-0400 I CONTROL  [initandlisten] 
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] 
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] 
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] 
+2018-04-22T23:52:46.487-0400 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2018-04-22T23:52:46.495-0400 D -        [initandlisten] reloading view catalog for database admin
+2018-04-22T23:52:46.496-0400 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:46.496-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 4
+2018-04-22T23:52:46.496-0400 D STORAGE  [initandlisten] stored meta data for admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.496-0400 D STORAGE  [initandlisten] WiredTigerKVEngine::createRecordStore ns: admin.system.version uri: table:collection-0--6030808606090455071 config: type=file,memory_page_max=10m,split_pct=90,leaf_value_max=64MB,checksum=on,block_compressor=snappy,,key_format=q,value_format=u,app_metadata=(formatVersion=1),log=(enabled=true)
+2018-04-22T23:52:46.506-0400 D STORAGE  [initandlisten] WiredTigerUtil::checkApplicationMetadataFormatVersion  uri: table:collection-0--6030808606090455071 ok range 1 -> 1 current: 1
+2018-04-22T23:52:46.507-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.507-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "admin.system.version", ident: "collection-0--6030808606090455071", md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.507-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.507-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.507-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "admin.system.version", ident: "collection-0--6030808606090455071", md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "admin.system.version", ident: "collection-0--6030808606090455071", md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "admin.system.version", ident: "collection-0--6030808606090455071", md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "admin.system.version", ident: "collection-0--6030808606090455071", md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "admin.system.version", ident: "collection-0--6030808606090455071", md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.508-0400 D STORAGE  [initandlisten] admin.system.version: clearing plan cache - collection info cache reset
+2018-04-22T23:52:46.509-0400 D STORAGE  [initandlisten] registering collection admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:46.509-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.509-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "admin.system.version", ident: "collection-0--6030808606090455071", md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.509-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.510-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.510-0400 D STORAGE  [initandlisten] recording new metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.510-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.510-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.511-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.511-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.511-0400 D STORAGE  [initandlisten] index create string: type=file,internal_page_max=16k,leaf_page_max=16k,checksum=on,prefix_compression=true,block_compressor=,,,,key_format=u,value_format=u,app_metadata=(formatVersion=8,infoObj={ "v" : 2, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "admin.system.version" }),log=(enabled=true)
+2018-04-22T23:52:46.511-0400 D STORAGE  [initandlisten] WiredTigerKVEngine::createSortedDataInterface ns: admin.system.version ident: index-1--6030808606090455071 config: type=file,internal_page_max=16k,leaf_page_max=16k,checksum=on,prefix_compression=true,block_compressor=,,,,key_format=u,value_format=u,app_metadata=(formatVersion=8,infoObj={ "v" : 2, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "admin.system.version" }),log=(enabled=true)
+2018-04-22T23:52:46.511-0400 D STORAGE  [initandlisten] create uri: table:index-1--6030808606090455071 config: type=file,internal_page_max=16k,leaf_page_max=16k,checksum=on,prefix_compression=true,block_compressor=,,,,key_format=u,value_format=u,app_metadata=(formatVersion=8,infoObj={ "v" : 2, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "admin.system.version" }),log=(enabled=true)
+2018-04-22T23:52:46.519-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] WiredTigerUtil::checkApplicationMetadataFormatVersion  uri: table:index-1--6030808606090455071 ok range 6 -> 8 current: 8
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] admin.system.version: clearing plan cache - collection info cache reset
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.520-0400 D STORAGE  [initandlisten] recording new metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.520-0400 D INDEX    [initandlisten] marking index _id_ as ready in snapshot id 4
+2018-04-22T23:52:46.521-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.521-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.521-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.521-0400 D STORAGE  [initandlisten] unregistering collection admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:46.521-0400 D STORAGE  [initandlisten] registering collection admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:46.522-0400 D STORAGE  [initandlisten] WT commit_transaction for snapshot id 4
+2018-04-22T23:52:46.522-0400 D STORAGE  [initandlisten] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:46.522-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 5
+2018-04-22T23:52:46.522-0400 D ASIO     [NetworkInterfaceCollectionRangeDeleter-TaskExecutor-0] The NetworkInterfaceASIO worker thread is spinning up
+2018-04-22T23:52:46.522-0400 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2018-04-22T23:52:46.522-0400 D STORAGE  [initandlisten] WT commit_transaction for snapshot id 5
+2018-04-22T23:52:46.522-0400 D STORAGE  [initandlisten] enter repairDatabases (to check pdfile version #)
+2018-04-22T23:52:46.522-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 6
+2018-04-22T23:52:46.525-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.525-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.525-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.525-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.525-0400 D -        [initandlisten] reloading view catalog for database local
+2018-04-22T23:52:46.525-0400 D STORAGE  [initandlisten]     Recovering database: admin
+2018-04-22T23:52:46.525-0400 D QUERY    [initandlisten] Using idhack: query: { _id: "featureCompatibilityVersion" } sort: {} projection: {}
+2018-04-22T23:52:46.526-0400 D STORAGE  [initandlisten] looking up metadata for: admin.system.version @ RecordId(1)
+2018-04-22T23:52:46.526-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-1--6030808606090455071" }, ns: "admin.system.version", ident: "collection-0--6030808606090455071" }
+2018-04-22T23:52:46.526-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "admin.system.version", options: { uuid: UUID("8fb36933-fb66-4263-9e52-f6945c0571ca") }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.526-0400 D STORAGE  [initandlisten] done repairDatabases
+2018-04-22T23:52:46.526-0400 D STORAGE  [initandlisten] WT rollback_transaction for snapshot id 6
+2018-04-22T23:52:46.526-0400 D COMMAND  [initandlisten] run command admin.$cmd { find: "system.roles", $db: "admin" }
+2018-04-22T23:52:46.527-0400 D QUERY    [initandlisten] Collection admin.system.roles does not exist. Using EOF plan: query: {} sort: {} projection: {}
+2018-04-22T23:52:46.527-0400 I COMMAND  [initandlisten] command admin.system.roles command: find { find: "system.roles", $db: "admin" } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:91 locks:{ Global: { acquireCount: { r: 12, w: 3, W: 3 } }, Database: { acquireCount: { r: 3, W: 3 } }, Collection: { acquireCount: { r: 3, w: 1 } } } protocol:op_msg 0ms
+2018-04-22T23:52:46.527-0400 D QUERY    [initandlisten] Using idhack: query: { _id: "authSchema" } sort: {} projection: {}
+2018-04-22T23:52:46.527-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 7
+2018-04-22T23:52:46.528-0400 D STORAGE  [initandlisten] WT rollback_transaction for snapshot id 7
+2018-04-22T23:52:46.528-0400 D QUERY    [initandlisten] Using idhack: query: { _id: "shardIdentity" } sort: {} projection: {}
+2018-04-22T23:52:46.528-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 8
+2018-04-22T23:52:46.528-0400 D STORAGE  [initandlisten] WT rollback_transaction for snapshot id 8
+2018-04-22T23:52:46.528-0400 D STORAGE  [initandlisten] create collection local.startup_log { capped: true, size: 10485760 }
+2018-04-22T23:52:46.528-0400 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:46.528-0400 D STORAGE  [initandlisten] WT begin_transaction for snapshot id 9
+2018-04-22T23:52:46.528-0400 D STORAGE  [initandlisten] stored meta data for local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.528-0400 D STORAGE  [initandlisten] WiredTigerKVEngine::createRecordStore ns: local.startup_log uri: table:collection-2--6030808606090455071 config: type=file,memory_page_max=10m,split_pct=90,leaf_value_max=64MB,checksum=on,block_compressor=snappy,,key_format=q,value_format=u,app_metadata=(formatVersion=1),log=(enabled=true)
+2018-04-22T23:52:46.538-0400 D STORAGE  [initandlisten] WiredTigerUtil::checkApplicationMetadataFormatVersion  uri: table:collection-2--6030808606090455071 ok range 1 -> 1 current: 1
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "local.startup_log", ident: "collection-2--6030808606090455071", md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "local.startup_log", ident: "collection-2--6030808606090455071", md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "local.startup_log", ident: "collection-2--6030808606090455071", md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "local.startup_log", ident: "collection-2--6030808606090455071", md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "local.startup_log", ident: "collection-2--6030808606090455071", md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "local.startup_log", ident: "collection-2--6030808606090455071", md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] local.startup_log: clearing plan cache - collection info cache reset
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] registering collection local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { ns: "local.startup_log", ident: "collection-2--6030808606090455071", md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 } }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [], prefix: -1 }
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.539-0400 D STORAGE  [initandlisten] recording new metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.540-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.540-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.540-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.540-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.540-0400 D STORAGE  [initandlisten] index create string: type=file,internal_page_max=16k,leaf_page_max=16k,checksum=on,prefix_compression=true,block_compressor=,,,,key_format=u,value_format=u,app_metadata=(formatVersion=8,infoObj={ "v" : 2, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "local.startup_log" }),log=(enabled=true)
+2018-04-22T23:52:46.540-0400 D STORAGE  [initandlisten] WiredTigerKVEngine::createSortedDataInterface ns: local.startup_log ident: index-3--6030808606090455071 config: type=file,internal_page_max=16k,leaf_page_max=16k,checksum=on,prefix_compression=true,block_compressor=,,,,key_format=u,value_format=u,app_metadata=(formatVersion=8,infoObj={ "v" : 2, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "local.startup_log" }),log=(enabled=true)
+2018-04-22T23:52:46.540-0400 D STORAGE  [initandlisten] create uri: table:index-3--6030808606090455071 config: type=file,internal_page_max=16k,leaf_page_max=16k,checksum=on,prefix_compression=true,block_compressor=,,,,key_format=u,value_format=u,app_metadata=(formatVersion=8,infoObj={ "v" : 2, "key" : { "_id" : 1 }, "name" : "_id_", "ns" : "local.startup_log" }),log=(enabled=true)
+2018-04-22T23:52:46.547-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:46.552-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.552-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.552-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] WiredTigerUtil::checkApplicationMetadataFormatVersion  uri: table:index-3--6030808606090455071 ok range 6 -> 8 current: 8
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] local.startup_log: clearing plan cache - collection info cache reset
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: false, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] recording new metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.553-0400 D INDEX    [initandlisten] marking index _id_ as ready in snapshot id 9
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] looking up metadata for: local.startup_log @ RecordId(3)
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten]  fetched CCE metadata: { md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }, idxIdent: { _id_: "index-3--6030808606090455071" }, ns: "local.startup_log", ident: "collection-2--6030808606090455071" }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] returning metadata: md: { ns: "local.startup_log", options: { uuid: UUID("75a95c0e-af3d-41a6-998c-7795dfdbd516"), capped: true, size: 10485760 }, indexes: [ { spec: { v: 2, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }, ready: true, multikey: false, multikeyPaths: { _id: BinData(0, 00) }, head: 0, prefix: -1 } ], prefix: -1 }
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] unregistering collection local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] registering collection local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:46.553-0400 D STORAGE  [initandlisten] WT commit_transaction for snapshot id 9
+2018-04-22T23:52:46.554-0400 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/vineeth/Documents/VinzLab/ExpressJS/LibraryApp/db/diagnostic.data'
+2018-04-22T23:52:46.554-0400 D INDEX    [initandlisten] IndexRebuilder::checkNS: admin.system.version
+2018-04-22T23:52:46.554-0400 D INDEX    [initandlisten] IndexRebuilder::checkNS: local.startup_log
+2018-04-22T23:52:46.554-0400 D INDEX    [initandlisten] checking complete
+2018-04-22T23:52:46.554-0400 D COMMAND  [TTLMonitor] BackgroundJob starting: TTLMonitor
+2018-04-22T23:52:46.554-0400 D COMMAND  [ClientCursorMonitor] BackgroundJob starting: ClientCursorMonitor
+2018-04-22T23:52:46.554-0400 D COMMAND  [PeriodicTaskRunner] BackgroundJob starting: PeriodicTaskRunner
+2018-04-22T23:52:46.554-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:46.554-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:46.554-0400 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-04-22T23:52:46.657-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:46.762-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:46.866-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:46.969-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.074-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.179-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.284-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.387-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.490-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.595-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.695-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.796-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:47.898-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.001-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.106-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.211-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.313-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.417-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.521-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.626-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.730-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.834-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:48.939-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.044-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.146-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.246-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.352-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.454-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.558-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.663-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.767-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.873-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:49.976-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.080-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.180-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.285-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.385-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.489-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.559-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:50.560-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:50.594-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.697-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.802-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:50.907-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.013-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.114-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.219-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.324-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.425-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.529-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.629-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.735-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.835-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:51.940-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.044-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.145-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.246-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.347-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.447-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.552-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.658-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.762-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.867-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:52.971-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.076-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.180-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.280-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.385-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.485-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.586-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.690-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.791-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.891-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:53.991-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.095-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.198-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.303-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.404-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.505-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.563-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:54.564-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:54.610-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.713-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.813-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:54.915-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.016-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.119-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.223-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.323-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.426-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.531-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.632-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.734-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.835-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:55.936-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.036-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.140-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.241-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.342-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.445-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.546-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.646-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.749-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.853-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:56.956-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.062-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.164-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.269-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.370-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.476-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.579-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.679-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.784-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.885-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:57.986-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.089-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.190-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.295-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.398-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.499-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.569-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:52:58.569-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:52:58.601-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.703-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.804-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:58.906-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.011-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.114-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.218-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.319-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.421-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.525-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.629-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.733-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.835-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:52:59.938-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.039-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.139-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.240-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.340-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.441-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.545-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.648-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.752-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.853-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:00.953-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.056-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.157-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.260-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.361-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.463-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.563-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.666-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.771-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.873-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:01.974-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.076-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.180-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.284-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.386-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.491-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.576-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:02.576-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:02.594-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.695-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.799-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:02.902-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.002-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.107-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.211-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.314-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.416-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.520-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.623-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.725-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.829-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:03.931-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.032-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.135-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.239-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.340-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.442-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.547-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.651-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.754-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.855-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:04.955-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.059-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.162-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.265-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.366-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.466-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.570-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.674-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.775-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.880-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:05.980-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.081-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.183-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.284-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.385-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.488-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.579-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:06.580-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:06.589-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.694-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.798-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:06.903-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.007-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.112-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.217-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.321-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.424-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.529-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.631-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.732-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.836-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:07.940-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.045-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.148-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.250-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.351-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.451-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.553-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.657-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.761-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.862-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:08.965-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.066-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.167-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.271-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.372-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.473-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.574-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.677-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.779-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.883-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:09.988-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.090-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.191-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.296-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.400-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.502-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.584-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:10.584-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:10.604-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.705-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.805-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:10.906-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.006-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.107-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.212-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.316-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.420-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.524-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.629-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.733-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.834-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:11.936-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.039-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.142-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.246-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.350-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.455-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.558-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.662-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.762-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.867-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:12.969-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.070-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.172-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.273-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.374-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.478-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.580-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.684-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.788-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.892-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:13.996-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.101-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.202-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.304-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.404-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.506-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.589-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:14.589-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:14.606-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.707-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.809-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:14.913-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.017-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.121-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.226-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.330-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.435-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.539-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.644-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.749-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.852-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:15.955-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.055-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.156-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.261-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.363-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.466-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.569-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.672-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.776-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.880-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:16.984-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.088-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.190-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.290-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.392-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.495-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.601-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.706-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.807-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:17.912-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.013-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.118-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.220-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.322-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.422-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.523-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.592-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:18.592-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:18.628-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.730-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.830-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:18.931-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.032-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.132-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.234-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.339-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.442-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.547-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.651-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.754-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.857-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:19.958-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.059-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.162-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.263-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.368-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.471-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.572-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.674-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.779-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.882-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:20.983-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.086-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.188-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.289-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.392-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.493-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.595-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.695-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.801-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:21.905-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.007-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.112-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.212-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.312-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.414-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.520-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.593-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:22.593-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:22.623-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.726-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.829-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:22.931-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.035-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.137-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.239-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.343-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.444-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.545-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.646-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.751-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.854-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:23.956-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.057-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.162-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.267-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.370-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.473-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.574-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.678-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.783-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.888-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:24.993-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.098-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.201-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.305-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.410-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.512-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.614-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.714-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.815-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:25.921-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.024-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.129-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.233-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.335-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.436-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.537-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.594-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:26.595-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:26.640-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.744-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.845-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:26.949-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.053-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.157-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.261-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.364-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.467-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.569-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.675-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.778-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.881-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:27.983-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.086-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.188-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.292-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.396-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.498-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.603-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.707-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.812-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:28.916-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.020-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.125-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.229-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.334-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.436-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.537-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.642-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.746-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.846-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:29.948-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.050-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.150-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.250-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.353-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.458-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.560-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.599-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:30.599-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:30.663-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.764-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.868-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:30.972-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.077-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.181-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.281-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.385-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.489-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.592-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.693-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.796-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:31.899-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.003-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.106-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.209-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.312-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.415-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.519-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.622-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.724-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.827-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:32.929-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.029-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.134-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.235-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.339-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.442-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.546-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.649-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.754-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.859-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:33.961-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.063-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.164-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.264-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.365-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.470-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.574-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.600-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:34.600-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:34.679-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.781-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.885-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:34.987-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.087-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.189-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.290-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.395-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.496-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.597-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.701-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.801-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:35.905-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.011-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.116-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.220-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.324-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.429-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.533-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.633-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.736-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.837-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:36.939-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.043-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.145-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.250-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.354-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.454-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.554-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.658-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.763-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.864-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:37.966-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.070-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.173-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.274-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.379-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.483-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.584-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.601-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:38.601-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:38.685-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.785-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.886-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:38.989-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.092-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.196-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.300-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.402-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.507-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.608-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.712-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.814-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:39.919-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.022-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.127-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.231-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.334-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.437-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.537-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.643-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.747-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.852-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:40.954-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.054-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.158-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.262-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.365-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.468-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.571-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.674-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.779-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.882-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:41.986-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.087-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.187-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.291-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.392-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.495-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.599-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.605-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:42.605-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:42.699-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.803-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:42.903-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.005-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.108-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.212-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.316-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.420-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.522-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.626-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.731-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.835-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:43.940-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.041-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.141-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.246-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.350-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.452-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.553-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.658-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.760-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.862-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:44.967-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.067-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.170-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.274-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.378-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.482-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.586-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.689-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.790-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.891-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:45.996-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.005-0400 D STORAGE  [ftdc] WiredTigerSizeStorer::storeInto table:_mdb_catalog -> { numRecords: 3, dataSize: 899 }
+2018-04-22T23:53:46.005-0400 D STORAGE  [ftdc] WiredTigerSizeStorer::storeInto table:collection-0--6030808606090455071 -> { numRecords: 1, dataSize: 59 }
+2018-04-22T23:53:46.005-0400 D STORAGE  [ftdc] WiredTigerSizeStorer::storeInto table:collection-2--6030808606090455071 -> { numRecords: 1, dataSize: 1951 }
+2018-04-22T23:53:46.104-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.210-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.310-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.417-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.467-0400 D STORAGE  [WTCheckpointThread] created checkpoint (forced)
+2018-04-22T23:53:46.518-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.556-0400 D INDEX    [TTLMonitor] thread awake
+2018-04-22T23:53:46.557-0400 D COMMAND  [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 0ms
+2018-04-22T23:53:46.557-0400 D -        [PeriodicTaskRunner] cleaning up unused lock buckets of the global lock manager
+2018-04-22T23:53:46.558-0400 D COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 0ms
+2018-04-22T23:53:46.558-0400 D COMMAND  [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 0ms
+2018-04-22T23:53:46.607-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:46.608-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:46.618-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.718-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.819-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:46.922-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.023-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.128-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.230-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.331-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.435-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.539-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.640-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.741-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.845-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:47.946-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.050-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.152-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.259-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.360-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.460-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.561-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.662-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.764-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.866-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:48.969-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.070-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.172-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.276-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.379-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.482-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.586-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.690-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.791-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.895-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:49.998-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.103-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.203-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.307-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.412-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.517-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.612-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:50.612-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:50.620-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.725-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.828-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:50.929-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.034-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.139-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.241-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.345-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.446-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.549-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.652-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.756-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.860-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:51.964-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.069-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.169-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.271-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.372-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.472-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.576-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.681-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.782-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.890-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:52.991-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.092-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.192-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.293-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.398-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.502-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.606-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.710-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.811-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:53.913-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.014-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.118-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.218-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.319-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.422-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.527-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.614-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:54.614-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:54.629-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.730-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.830-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:54.933-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.033-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.136-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.239-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.343-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.446-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.547-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.651-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.752-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.855-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:55.958-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.076-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.181-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.284-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.388-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.491-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.592-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.696-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.796-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.897-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:56.998-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.098-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.199-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.299-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.400-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.503-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.607-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.712-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.817-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:57.919-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.021-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.126-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.229-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.329-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.434-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.538-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.617-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:53:58.617-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:53:58.639-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.743-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.847-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:58.948-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.049-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.153-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.254-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.355-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.459-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.562-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.663-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.768-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.872-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:53:59.975-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.078-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.181-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.286-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.388-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.489-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.593-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.698-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.800-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:00.902-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.006-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.110-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.214-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.318-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.421-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.526-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.631-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.735-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.837-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:01.937-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.038-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.139-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.241-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.345-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.449-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.549-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.622-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:54:02.622-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:54:02.652-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.754-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.858-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:02.962-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.065-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.168-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.271-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.372-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.472-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.574-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.677-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.781-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.885-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:03.990-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.094-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.198-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.299-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.400-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.501-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.602-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.702-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.806-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:04.910-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.014-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.117-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.219-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.321-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.426-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.531-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.631-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.732-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.834-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:05.934-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.035-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.137-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.241-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.341-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.442-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.543-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.628-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:54:06.628-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:54:06.646-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.748-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.854-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:06.955-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.059-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.162-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.265-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.369-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.472-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.574-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.674-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.779-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.882-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:07.983-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.086-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.188-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.290-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.392-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.495-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.596-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.699-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.800-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:08.901-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.006-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.107-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.212-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.316-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.420-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.523-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.625-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.727-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.832-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:09.934-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.035-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.144-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.247-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.352-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.455-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.558-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.629-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace local.startup_log with UUID 75a95c0e-af3d-41a6-998c-7795dfdbd516
+2018-04-22T23:54:10.629-0400 D STORAGE  [clientcursormon] NamespaceUUIDCache: registered namespace admin.system.version with UUID 8fb36933-fb66-4263-9e52-f6945c0571ca
+2018-04-22T23:54:10.659-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.760-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.860-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:10.961-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.061-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.165-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.268-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.373-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.473-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.574-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.676-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.777-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.880-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:11.982-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.087-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.190-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.294-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.399-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.503-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.606-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.709-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.813-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:12.917-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:13.019-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:13.119-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:13.219-0400 D STORAGE  [WTJournalFlusher] flushed journal
+2018-04-22T23:54:13.263-0400 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+2018-04-22T23:54:13.263-0400 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-04-22T23:54:13.263-0400 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-04-22T23:54:13.263-0400 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-04-22T23:54:13.266-0400 D STORAGE  [signalProcessingThread] ~WiredTigerRecordStore for: admin.system.version
+2018-04-22T23:54:13.266-0400 D STORAGE  [signalProcessingThread] ~WiredTigerRecordStore for: local.startup_log
+2018-04-22T23:54:13.266-0400 D STORAGE  [signalProcessingThread] ~WiredTigerRecordStore for: _mdb_catalog
+2018-04-22T23:54:13.266-0400 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-04-22T23:54:13.266-0400 D STORAGE  [signalProcessingThread] WiredTigerSizeStorer::storeInto table:_mdb_catalog -> { numRecords: 3, dataSize: 899 }
+2018-04-22T23:54:13.266-0400 D STORAGE  [signalProcessingThread] WiredTigerSizeStorer::storeInto table:collection-0--6030808606090455071 -> { numRecords: 1, dataSize: 59 }
+2018-04-22T23:54:13.266-0400 D STORAGE  [signalProcessingThread] WiredTigerSizeStorer::storeInto table:collection-2--6030808606090455071 -> { numRecords: 1, dataSize: 1951 }
+2018-04-22T23:54:13.324-0400 D STORAGE  [WTJournalFlusher] stopping WTJournalFlusher thread
+2018-04-22T23:54:13.351-0400 D STORAGE  [WTCheckpointThread] created checkpoint (forced)
+2018-04-22T23:54:13.352-0400 D STORAGE  [WTCheckpointThread] stopping WTCheckpointThread thread
+2018-04-22T23:54:13.379-0400 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-04-22T23:54:13.380-0400 I CONTROL  [signalProcessingThread] now exiting
+2018-04-22T23:54:13.380-0400 I CONTROL  [signalProcessingThread] shutting down with code:0
